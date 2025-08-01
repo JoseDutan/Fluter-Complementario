@@ -52,6 +52,5 @@ class Vehiculo {
     print("Info extra: $extralnfo");
     print("Mensaje del taller: ${Taller.mensajeGeneral}");
     print("Nombre del taller: ${Taller.nombre}");
-    print("----------------------------------");
   }
 }
