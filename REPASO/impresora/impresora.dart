@@ -6,7 +6,7 @@ class ImpresoraCentral {
   bool get estaConectada => _conectada;
 
   void conectar() {
-    if (_conectada) {
+    if (!_conectada) {
       _conectada = true;
       print('Impresora conectada correctamente.');
     } else {
