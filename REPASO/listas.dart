@@ -1,5 +1,3 @@
-import 'dart:mirrors';
-
 void main() {
   List<String> ciudades = ['Quito', 'Guayaquil', 'Cuenca', 'Loja', 'Quito'];
   print(ciudades);
