@@ -35,7 +35,7 @@ class DatabaseHelper {
     return List.generate(maps.length, (i) {
       return Book(
         id: maps[i]['id'],
-        tittle: maps[i]['title'],
+        title: maps[i]['title'],
         author: maps[i]['author'],
         status: maps[i]['status'],
         note: maps[i]['note'],
