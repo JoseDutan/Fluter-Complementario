@@ -16,7 +16,7 @@ class Book {
   Map<String, dynamic> toMap() {
     return {
       'id': id,
-      'tittle': title,
+      'title': title,
       'author': author,
       'status': status,
       'note': note,

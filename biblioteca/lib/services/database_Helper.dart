@@ -19,7 +19,7 @@ class DatabaseHelper {
     String path = join(await getDatabasesPath(), 'library.db');
     return await openDatabase(path, version: 1, onCreate: (db, version) {
       return db.execute(
-          'CREATE TABLE books(id INTEGER PRIMARY KEY, title text, author TEXT, status TEXT, note TEXT)');
+          'CREATE TABLE books(id INTEGER PRIMARY KEY, title TEXT, author TEXT, status TEXT, note TEXT)');
     });
   }
 
