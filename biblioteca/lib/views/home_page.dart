@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  void _deleteBook(int id) async {
+  void _deleteBook(String id) async {
     await DatabaseHelper().deleteBook(id);
     _refreshList();
   }
@@ -36,6 +36,13 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Mi biblioteca'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.refresh),
+            onPressed: _refreshList,
+            tooltip: 'Recargar lista',
+          ),
+        ],
       ),
       body: FutureBuilder<List<Book>>(
         future: _bookList,
